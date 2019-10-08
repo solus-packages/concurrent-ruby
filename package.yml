@@ -1,6 +1,6 @@
 name       : concurrent-ruby
 version    : 1.1.4
-release    : 3
+release    : 4
 source     :
     - https://rubygems.org/downloads/concurrent-ruby-1.1.4.gem : e12e6ab140d8d99c14763a605b9671a5e182d4bf6dc951d4cb5debe86eeaacc7
 license    : MIT
