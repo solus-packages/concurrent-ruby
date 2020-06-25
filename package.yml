@@ -1,16 +1,17 @@
 name       : concurrent-ruby
-version    : 1.1.4
-release    : 4
+version    : 1.1.6
+release    : 5
 source     :
-    - https://rubygems.org/downloads/concurrent-ruby-1.1.4.gem : e12e6ab140d8d99c14763a605b9671a5e182d4bf6dc951d4cb5debe86eeaacc7
+    - https://rubygems.org/downloads/concurrent-ruby-1.1.6.gem : 14da21d5cfe9ccb02e9359b01cb7291e0167ded0ec805d4f3a4b2b4ffa418324
 license    : MIT
 component  : programming.ruby
 summary    : RubyGem - concurrent-ruby
 description: |
     Modern concurrency tools including agents, futures, promises, thread pools, actors, supervisors, and more. Inspired by Erlang, Clojure, Go, JavaScript, actors, and classic concurrency patterns.
 builddeps  :
-    - pkgconfig(ruby-2.6)
+    - pkgconfig(ruby-2.7)
 rundeps    :
     - ruby
 install    : |
     %gem_install
+    rm -rf $installdir/$geminstalldir/{build_info,doc,extensions}
